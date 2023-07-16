@@ -1,0 +1,608 @@
+$main-color: #fff
+$active-color: #d81d1d
+
+@font-face 
+    font-family: "OpenSans"
+    src: url('../fonts/OpenSans-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+
+@font-face 
+    font-family: "OpenSans"
+    src: url('../fonts/OpenSans-Bold')
+    font-weight: 700
+    font-style: normal
+
+@font-face 
+    font-family: "OpenSans"
+    src: url('../fonts/OpenSans-Italic.ttf')
+    font-weight: 500
+    font-style: italic
+
+@font-face 
+    font-family: "OpenSans"
+    src: url('../fonts/OpenSans-SemiBold.ttf')
+    font-weight: 600
+    font-style: normal
+
+@font-face 
+    font-family: "Tinos"
+    src: url('../fonts/Tinos-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+
+@font-face 
+    font-family: "Cookie"
+    src: url('../fonts/Cookie-Regular.ttf')
+    font-weight: 400
+    font-style: normal
+
+*
+    box-sizing: border-box
+
+body
+    font-family: "OpenSans", sans-serif
+    
+.container
+    max-width: 1110px
+    margin: 0 auto
+
+.header
+    background-image: url("../img/bg.jpg")
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh
+    &__line
+        padding-top: 50px
+        margin-bottom: 205px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        margin-right: 245px
+    &__button
+        padding: 14px 18px
+    &__down-button
+        padding: 14px 28px
+    &__down
+        position: relative
+        text-align: center
+    &__box-title
+        position: absolute
+        left: 0
+    &__title
+        font-family: "Tinos"
+        font-weight: 400
+        font-size: 50px
+        line-height: 57px
+        color: #D67E35
+    &__subtitle
+        font-family: "Tinos"
+        font-weight: 400
+        font-size: 80px
+        line-height: 92px
+        color: #D67E35
+    &__suptitle
+        margin-bottom: 30px
+        font-weight: 400
+        font-size: 18px
+        line-height: 25px
+        color: $main-color
+        &::before
+            content: ""
+            position: absolute
+            height: 2px
+            width: 61px
+            background-color: $main-color
+            top: 160px
+            left: 85px
+        &::after
+            content: ""
+            position: absolute
+            height: 2px
+            width: 61px
+            background-color: $main-color
+            top: 160px
+            left: 335px
+
+.nav
+    margin-right: 30px
+    &__item
+        color: $main-color
+        text-decoration: none
+        font-weight: 700
+        font-size: 14px
+        line-height: 19px
+        margin-right: 25px
+        transition: color 0.3s linear
+        &:last-child
+            margin-right: 0
+        &:hover
+            color: $active-color
+
+.cart
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 35px
+    border-right: 1px solid $main-color
+    height: 50px
+    text-align: center
+    &__link
+        padding-right: 20px
+
+.phone
+    margin-right: 38px
+    &__holder
+        display: flex
+        align-items: center
+    &__img
+        margin-right: 8px
+    &__number
+        color: $main-color
+        text-decoration: none
+        font-size: 18px
+        font-weight: 700
+        transition: color 0.3s linear
+        &:hover
+            color: $active-color
+    &__text
+        font-weight: 400
+        font-size: 14px
+        line-height: 19px
+        color: $main-color
+
+.button
+    background-color: #FF7400
+    color: $main-color
+    text-decoration: none
+    font-weight: 700
+    transition: color 0.3s linear
+    &:hover
+        background-color: #894b17
+
+.title
+    font-family: "Tinos"
+    font-weight: 400
+    font-size: 54px
+    line-height: 62px
+    color: #000000
+    text-align: center
+
+.section-cards
+    margin-bottom: 100px
+    &__holder
+        display: flex
+        justify-content: center
+        gap: 31px
+
+.cards
+    width: 349px
+    height: 328px
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1)
+    background-color: $main-color
+    margin-top: -100px
+    padding: 10px
+    &__card-image
+        display: flex
+        justify-content: center
+        padding-top: 30px
+    &__card-title
+        text-align: center
+        margin-bottom: 20px
+        font-family: "Tinos"
+        font-weight: 400
+        font-size: 26px
+        line-height: 30px
+        color: #2C2C2C
+        span
+            color: #BC9060
+    &__card-subtitle
+        text-align: center
+        font-family: "Tinos"
+        font-weight: 400
+        font-size: 26px
+        line-height: 30px
+        color: #656363
+
+.history
+    margin-bottom: 165px
+    &__container
+        display: flex
+        justify-content: space-between
+    &__left-wrapper
+        width: 444px
+    &__right-wrapper
+        width: 540px
+    &__text-box
+        margin-bottom: 40px
+    &__title
+        margin-bottom: 20px
+        span
+            color: #D67E34
+    &__desc
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: #656363
+    &__number-items
+        display: flex
+        justify-content: center
+        gap: 60px
+    &__number-box
+        dt
+            font-weight: 400
+            font-size: 40px
+            line-height: 54px
+            color: #BC9060
+            text-align: center
+        dd
+            font-weight: 400
+            font-size: 20px
+            line-height: 27px
+            color: #000000
+            text-align: center
+    &__images
+        position: relative
+        &_1
+            position: absolute
+            top: 54px
+            left: -12px
+            z-index: 30
+        &_2
+            position: absolute
+            top: 20px
+            left: 180px
+            z-index: 20
+        &_3
+            position: absolute
+            top: 212px
+            left: 272px
+            z-index: 30
+
+.black-block
+    background-image: url("../img/black-bg.jpg")
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0
+    margin-bottom: 132px
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title
+        font-family: "Tinos"
+        font-weight: 400
+        font-size: 52px
+        line-height: 60px
+        color: #D67E34
+        margin-bottom: 20px
+    &__text
+        font-weight: 700
+        font-size: 24px
+        line-height: 33px
+        color: $main-color
+    &__button
+        padding: 14px 18px
+    &__right-wrapper
+
+.dishes
+    margin-bottom: 150px
+    &__title
+        margin-bottom: 140px
+        span
+            color: #D67E34
+
+.burgers
+    display: flex
+    justify-content: center
+    &__image
+        margin-right: 30px
+    &__item
+        display: flex
+        align-items: center
+        margin-bottom: 29px
+    &__burger
+        margin-right: 30px
+    &__text
+        font-family: "Tinos"
+        font-weight: 400
+        font-size: 26px
+        line-height: 30px
+        color: #000000
+.circle
+        width: 100px
+        height: 100px
+        border-radius: 100px
+        background-color: #D67E34
+        border: 7px solid $main-color
+
+.menu
+    background-image: url(../img/menu-bg.jpg)
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title
+        padding-top: 100px
+        margin-bottom: 235px
+        text-align: center
+        font-family: "Tinos"
+        font-weight: 400
+        font-size: 54px
+        line-height: 62px
+        color: $main-color
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
+    &__items
+        display: flex
+        justify-content: center
+        gap: 30px
+    &__item
+        background-color: $main-color
+        width: 350px
+        height: 510px
+        text-align: center
+    &__image-box
+        position: relative
+        padding-top: 80px
+        margin-bottom: 22px
+    &__item-text
+        margin-bottom: 17px
+        font-family: "Tinos"
+        font-weight: 400
+        font-size: 26px
+        line-height: 30px
+        text-align: center
+        color: #000000
+    &__item-subtext
+        margin-bottom: 20px
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: #000000
+    &__item-button
+        padding: 14px 68px
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25)
+    &__circle
+        position: absolute
+        left: 200px
+        top: 220px
+        display: flex
+        justify-content: center
+        align-items: center
+    &__price-txt
+        font-family: "Cookie"
+        font-weight: 400
+        font-size: 30px
+        line-height: 33px
+        color: $main-color
+
+.comment
+    background-color: #E5E5E5
+    min-height: 550px
+    padding-top: 140px 
+    &__container
+        padding: 0 95px
+    &__text
+        font-style: italic
+        font-weight: 400
+        font-size: 20px
+        line-height: 27px
+        text-align: center
+        color: #000000
+        margin-bottom: 25px
+    &__image-box
+        text-align: center
+    &__type
+        font-weight: 600
+        font-size: 20px
+        line-height: 27px
+        color: #000000
+        margin-bottom: 9px
+        text-align: center
+    &__name
+        font-weight: 400
+        font-size: 20px
+        line-height: 27px
+        color: #000000
+        text-align: center
+    
+.galery
+    &__title
+        padding-top: 100px
+        margin-bottom: 60px
+        span
+            color: #D67E34
+    &__container
+        display: flex
+        justify-content: center
+    &__left-wrapper
+        margin-right: 30px
+    &__up-wrapper
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+    &__down-wrapper
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+
+.cooks
+    margin-bottom: 70px
+    &__title
+        margin-top: 100px
+        margin-bottom: 107px
+        span
+            color: #D67E34
+    &__images
+        display: flex
+        justify-content: space-around
+
+.footer
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #000
+    color: $main-color
+    min-height: 100px
+
+.burger-menu
+    display: none
+
+.block
+    display: block
+    margin-bottom: 20px
+    &:last-child
+        margin-bottom: 0
+
+.burger-slide
+    position: absolute
+
+.disp
+    display: none
+
+.burger-button
+    border: none
+    outline: none
+    background-color: transparent
+    margin-bottom: 20px
+
+@media (max-width: 1500px)
+    .galery
+        &__container
+            display: block
+        &__up-wrapper,
+        &__down-wrapper,
+        &__image
+            display: block
+            margin: 0 auto
+        &__image
+            margin-bottom: 20px
+        &__left-wrapper
+            margin-right: 0
+    
+@media (max-width: 1300px)
+    .header
+        &__box-title
+            position: static
+        &__suptitle
+            &::before,
+            &::after
+                content: none
+    .menu
+        &__title
+            margin-bottom: 65px
+        &__items
+            display: block
+        &__item
+            margin: 20px auto
+
+    .cooks
+        &__images
+            display: block
+            img
+                display: block
+                margin: 0 auto 30px auto
+
+    .black-block
+        margin-bottom: 50px
+        &__container
+            display: block
+            padding-left: 20px
+        &__left-wrapper
+            margin-bottom: 60px
+
+    .history
+        &__container
+            justify-content: center
+        &__left-wrapper
+            width: 90%
+        &__right-wrapper
+            display: none
+
+@media (max-width: 1185px)
+    .burger-menu
+        display: block
+    .header
+        &__line
+            margin-bottom: 120px
+            justify-content: space-between
+            padding: 0 50px
+            padding-top: 20px
+        &__box-button
+            display: none 
+        &__logo
+            margin-right: 0
+    .nav,
+    .cart,
+    .phone
+        display: none
+    .dishes
+        margin-bottom: 40px
+        &__title
+            margin-bottom: 40px
+    .burgers
+        &__image
+            display: none
+
+@media (max-width: 1000px)
+    .section-cards
+        margin-bottom: 60px
+        &__holder
+            flex-direction: column
+            align-items: center
+    .cards
+        margin-top: 10px
+    .history
+        margin-bottom: 60px
+
+@media (max-width: 650px)
+    .black-block
+        &__title
+            font-size: 34px
+        &__text
+            font-size: 20px
+
+@media (max-width: 560px)
+    .header
+        &__title
+            font-size: 40px
+        &__subtitle
+            font-size: 60px
+    .burgers
+        &__burger
+            margin-right: 10px
+        &__text
+            font-size: 16px
+    .dishes
+        margin-bottom: 20px
+    .comment
+        padding-top: 40px
+    .galery
+        &__title
+            padding-top: 40px
+    .cooks
+        &__title
+            margin: 40px 0
+    .galery
+        &__title
+            margin-bottom: 40px
+        &__image
+            &_big
+                display: none
+
+@media (max-width: 400px)
+    .black-block
+        &__title
+            font-size: 28px
+        &__text
+            font-size: 14px
+    .burgers
+        &__text
+            font-size: 14px
+
+
+    
+    

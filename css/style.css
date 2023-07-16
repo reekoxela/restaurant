@@ -1,0 +1,951 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Italic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tinos";
+  src: url("../fonts/Tinos-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cookie";
+  src: url("../fonts/Cookie-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 40, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 43, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+body {
+  font-family: "OpenSans", sans-serif;
+}
+
+/* line 46, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* line 50, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* line 56, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__line {
+  padding-top: 50px;
+  margin-bottom: 205px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 62, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__logo {
+  margin-right: 245px;
+}
+
+/* line 64, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__button {
+  padding: 14px 18px;
+}
+
+/* line 66, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__down-button {
+  padding: 14px 28px;
+}
+
+/* line 68, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__down {
+  position: relative;
+  text-align: center;
+}
+
+/* line 71, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__box-title {
+  position: absolute;
+  left: 0;
+}
+
+/* line 74, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__title {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+  color: #D67E35;
+}
+
+/* line 80, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__subtitle {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 92px;
+  color: #D67E35;
+}
+
+/* line 86, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__suptitle {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+}
+
+/* line 92, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__suptitle::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 61px;
+  background-color: #fff;
+  top: 160px;
+  left: 85px;
+}
+
+/* line 100, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.header__suptitle::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 61px;
+  background-color: #fff;
+  top: 160px;
+  left: 335px;
+}
+
+/* line 109, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.nav {
+  margin-right: 30px;
+}
+
+/* line 111, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.nav__item {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  margin-right: 25px;
+  transition: color 0.3s linear;
+}
+
+/* line 119, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+/* line 121, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.nav__item:hover {
+  color: #d81d1d;
+}
+
+/* line 124, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+  border-right: 1px solid #fff;
+  height: 50px;
+  text-align: center;
+}
+
+/* line 132, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cart__link {
+  padding-right: 20px;
+}
+
+/* line 135, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.phone {
+  margin-right: 38px;
+}
+
+/* line 137, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.phone__holder {
+  display: flex;
+  align-items: center;
+}
+
+/* line 140, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.phone__img {
+  margin-right: 8px;
+}
+
+/* line 142, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.phone__number {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.3s linear;
+}
+
+/* line 148, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.phone__number:hover {
+  color: #d81d1d;
+}
+
+/* line 150, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.phone__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+}
+
+/* line 156, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.button {
+  background-color: #FF7400;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s linear;
+}
+
+/* line 162, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.button:hover {
+  background-color: #894b17;
+}
+
+/* line 165, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.title {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  color: #000000;
+  text-align: center;
+}
+
+/* line 173, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.section-cards {
+  margin-bottom: 100px;
+}
+
+/* line 175, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.section-cards__holder {
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+}
+
+/* line 180, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cards {
+  width: 349px;
+  height: 328px;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-top: -100px;
+  padding: 10px;
+}
+
+/* line 187, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cards__card-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/* line 191, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cards__card-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #2C2C2C;
+}
+
+/* line 199, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cards__card-title span {
+  color: #BC9060;
+}
+
+/* line 201, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cards__card-subtitle {
+  text-align: center;
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #656363;
+}
+
+/* line 209, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history {
+  margin-bottom: 165px;
+}
+
+/* line 211, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 214, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__left-wrapper {
+  width: 444px;
+}
+
+/* line 216, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__right-wrapper {
+  width: 540px;
+}
+
+/* line 218, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__text-box {
+  margin-bottom: 40px;
+}
+
+/* line 220, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__title {
+  margin-bottom: 20px;
+}
+
+/* line 222, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__title span {
+  color: #D67E34;
+}
+
+/* line 224, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #656363;
+}
+
+/* line 230, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__number-items {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* line 235, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__number-box dt {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  color: #BC9060;
+  text-align: center;
+}
+
+/* line 241, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__number-box dd {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  text-align: center;
+}
+
+/* line 247, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__images {
+  position: relative;
+}
+
+/* line 249, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__images_1 {
+  position: absolute;
+  top: 54px;
+  left: -12px;
+  z-index: 30;
+}
+
+/* line 254, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__images_2 {
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  z-index: 20;
+}
+
+/* line 259, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.history__images_3 {
+  position: absolute;
+  top: 212px;
+  left: 272px;
+  z-index: 30;
+}
+
+/* line 265, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.black-block {
+  background-image: url("../img/black-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  margin-bottom: 132px;
+}
+
+/* line 272, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.black-block__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 276, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.black-block__title {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+  color: #D67E34;
+  margin-bottom: 20px;
+}
+
+/* line 283, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.black-block__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+}
+
+/* line 288, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.black-block__button {
+  padding: 14px 18px;
+}
+
+/* line 292, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.dishes {
+  margin-bottom: 150px;
+}
+
+/* line 294, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.dishes__title {
+  margin-bottom: 140px;
+}
+
+/* line 296, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.dishes__title span {
+  color: #D67E34;
+}
+
+/* line 299, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.burgers {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 302, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.burgers__image {
+  margin-right: 30px;
+}
+
+/* line 304, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.burgers__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+/* line 308, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.burgers__burger {
+  margin-right: 30px;
+}
+
+/* line 310, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.burgers__text {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* line 316, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #D67E34;
+  border: 7px solid #fff;
+}
+
+/* line 323, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu {
+  background-image: url(../img/menu-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 327, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__title {
+  padding-top: 100px;
+  margin-bottom: 235px;
+  text-align: center;
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  color: #fff;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* line 337, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* line 341, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__item {
+  background-color: #fff;
+  width: 350px;
+  height: 510px;
+  text-align: center;
+}
+
+/* line 346, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__image-box {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 22px;
+}
+
+/* line 350, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__item-text {
+  margin-bottom: 17px;
+  font-family: "Tinos";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+/* line 358, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__item-subtext {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+/* line 365, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__item-button {
+  padding: 14px 68px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* line 368, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__circle {
+  position: absolute;
+  left: 200px;
+  top: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 375, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.menu__price-txt {
+  font-family: "Cookie";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  color: #fff;
+}
+
+/* line 382, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.comment {
+  background-color: #E5E5E5;
+  min-height: 550px;
+  padding-top: 140px;
+}
+
+/* line 386, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.comment__container {
+  padding: 0 95px;
+}
+
+/* line 388, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.comment__text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+/* line 396, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.comment__image-box {
+  text-align: center;
+}
+
+/* line 398, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.comment__type {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+/* line 405, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.comment__name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  text-align: center;
+}
+
+/* line 413, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.galery__title {
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+
+/* line 416, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.galery__title span {
+  color: #D67E34;
+}
+
+/* line 418, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.galery__container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 421, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.galery__left-wrapper {
+  margin-right: 30px;
+}
+
+/* line 423, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.galery__up-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 427, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.galery__down-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 432, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cooks {
+  margin-bottom: 70px;
+}
+
+/* line 434, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cooks__title {
+  margin-top: 100px;
+  margin-bottom: 107px;
+}
+
+/* line 437, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cooks__title span {
+  color: #D67E34;
+}
+
+/* line 439, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.cooks__images {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 443, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  min-height: 100px;
+}
+
+/* line 451, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.burger-menu {
+  display: none;
+}
+
+/* line 454, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.block {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 457, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.block:last-child {
+  margin-bottom: 0;
+}
+
+/* line 460, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.burger-slide {
+  position: absolute;
+}
+
+/* line 463, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.disp {
+  display: none;
+}
+
+/* line 466, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+.burger-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1500px) {
+  /* line 474, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .galery__container {
+    display: block;
+  }
+  /* line 476, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .galery__up-wrapper, .galery__down-wrapper, .galery__image {
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 481, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .galery__image {
+    margin-bottom: 20px;
+  }
+  /* line 483, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .galery__left-wrapper {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  /* line 488, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .header__box-title {
+    position: static;
+  }
+  /* line 491, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .header__suptitle::before, .header__suptitle::after {
+    content: none;
+  }
+  /* line 495, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .menu__title {
+    margin-bottom: 65px;
+  }
+  /* line 497, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .menu__items {
+    display: block;
+  }
+  /* line 499, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .menu__item {
+    margin: 20px auto;
+  }
+  /* line 503, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .cooks__images {
+    display: block;
+  }
+  /* line 505, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .cooks__images img {
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  /* line 509, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .black-block {
+    margin-bottom: 50px;
+  }
+  /* line 511, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .black-block__container {
+    display: block;
+    padding-left: 20px;
+  }
+  /* line 514, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .black-block__left-wrapper {
+    margin-bottom: 60px;
+  }
+  /* line 518, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .history__container {
+    justify-content: center;
+  }
+  /* line 520, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .history__left-wrapper {
+    width: 90%;
+  }
+  /* line 522, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .history__right-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 1185px) {
+  /* line 526, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .burger-menu {
+    display: block;
+  }
+  /* line 529, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .header__line {
+    margin-bottom: 120px;
+    justify-content: space-between;
+    padding: 0 50px;
+    padding-top: 20px;
+  }
+  /* line 534, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .header__box-button {
+    display: none;
+  }
+  /* line 536, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .header__logo {
+    margin-right: 0;
+  }
+  /* line 538, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .nav,
+  .cart,
+  .phone {
+    display: none;
+  }
+  /* line 542, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .dishes {
+    margin-bottom: 40px;
+  }
+  /* line 544, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .dishes__title {
+    margin-bottom: 40px;
+  }
+  /* line 547, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .burgers__image {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 551, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .section-cards {
+    margin-bottom: 60px;
+  }
+  /* line 553, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .section-cards__holder {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 556, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .cards {
+    margin-top: 10px;
+  }
+  /* line 558, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .history {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  /* line 563, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .black-block__title {
+    font-size: 34px;
+  }
+  /* line 565, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .black-block__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  /* line 570, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .header__title {
+    font-size: 40px;
+  }
+  /* line 572, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .header__subtitle {
+    font-size: 60px;
+  }
+  /* line 575, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .burgers__burger {
+    margin-right: 10px;
+  }
+  /* line 577, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .burgers__text {
+    font-size: 16px;
+  }
+  /* line 579, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .dishes {
+    margin-bottom: 20px;
+  }
+  /* line 581, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .comment {
+    padding-top: 40px;
+  }
+  /* line 584, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .galery__title {
+    padding-top: 40px;
+  }
+  /* line 587, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .cooks__title {
+    margin: 40px 0;
+  }
+  /* line 590, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .galery__title {
+    margin-bottom: 40px;
+  }
+  /* line 593, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .galery__image_big {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 598, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .black-block__title {
+    font-size: 28px;
+  }
+  /* line 600, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .black-block__text {
+    font-size: 14px;
+  }
+  /* line 603, ../Иванов А/HTML/restaurant/src/sass/style.sass */
+  .burgers__text {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
